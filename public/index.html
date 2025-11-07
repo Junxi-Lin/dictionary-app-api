@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dictionary Lookup</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Dictionary Lookup</h1>
+
+    <form id="lookup-form" class="lookup-form" autocomplete="off">
+      <label for="word-input" class="sr-only">Enter an English word</label>
+      <input id="word-input" name="word" type="text" placeholder="Enter an English word..." required aria-required="true" />
+      <button type="submit" id="search-btn">Search</button>
+    </form>
+
+    <div id="message" role="status" aria-live="polite"></div>
+    <section id="results" class="results" aria-live="polite" aria-busy="false"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Built with the <a href="https://dictionaryapi.dev/" target="_blank" rel="noopener noreferrer">Free Dictionary API</a>.
+      Source on <a href="YOUR_GITHUB_REPO_URL" target="_blank" rel="noopener noreferrer">GitHub</a>.
+    </p>
+  </footer>
+</body>
+</html>
